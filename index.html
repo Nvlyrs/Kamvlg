@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="js/mapApp.js"></script>
+    <title>КАМ</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <div class="fixed-header">
+            <div class="container">
+                <div class="fixed-header__row">
+                    <h1 class="fixed-header__logo">КАМ</h1>
+                    <div class="item">
+                        <button class="menu-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <nav class=" menu fixed-header__menu">
+                        <ul class="menu__list fixed-header__list">
+                            <li><a href="#main" class="menu__link">Главная</a></li>
+                            <li><a href="#about" class="menu__link">О студии</a></li>
+                            <li><a href="#services" class="menu__link">Услуги</a></li>
+                            <li><a href="#prices" class="menu__link">Цены</a></li>
+                            <li><a href="#coaches" class="menu__link">Тренеры</a></li>
+                            <li><a href="#contacts" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-mobile">
+            <nav class="menu-mobile_navbar">
+                <ul class="menu-mobile__list">
+                    <li><a href="#main" class="menu-mobile__link">Главная</a></li>
+                    <li><a href="#about" class="menu-mobile__link">О студии</a></li>
+                    <li><a href="#services" class="menu-mobile__link">Услуги</a></li>
+                    <li><a href="#prices" class="menu-mobile__link">Цены</a></li>
+                    <li><a href="#coaches" class="menu-mobile__link">Тренеры</a></li>
+                    <li><a href="#contacts" class="menu-mobile__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+
+            <section class="main-section" id="main">
+                <!-- <div class="container"> -->
+                <div class="main-section__row">
+                    <div class="main-section__text">
+                        <header class="header">
+                            <nav class="header__menu menu">
+                                <ul class=" header__list">
+                                    <li><a href="#main" class="menu__link">Главная</a></li>
+                                    <li><a href="#about" class="menu__link">О студии</a></li>
+                                    <li><a href="#services" class="menu__link">Услуги</a></li>
+                                    <li><a href="#prices" class="menu__link">Цены</a></li>
+                                    <li><a href="#coaches" class="menu__link">Тренеры</a></li>
+                                    <li><a href="#contacts" class="menu__link">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </header>
+                        <div class="main-section__text-body">
+                            <div class="main-section__text-box">
+                                <h1 class="main-section__main-title">
+                                    КАМ                            
+                                <!-- <span>К <span class="corr">Коррекция</span> </span> 
+                                <span>А <span class="adapt">Адаптивность</span>  </span>
+                                <span>М <span class="multi">Многофункциональность</span> </span> -->
+                                    <span class="decorate-box"></span>
+                                    <div class="abbr">
+                                        <span class="corr">Коррекция</span>
+                                        <span class="adapt">Адаптивность</span>
+                                        <span class="multi">Многофункциональность</span>
+                                    </div>
+                                </h1>
+                                <h3 class="main-section__subtitle">Фитнес студия </h3>
+                                <a class="main-section__btn" href="#about">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-section__image">
+                        <img src="img/main_photo.jpg" alt="" class="imgb main-section__imgb">
+                    </div>
+                </div>
+                <!-- </div> -->
+            </section>
+
+            <section class="about-section" id="about">
+                <div class="about-section__container container">
+                    <div class="about-section__background">
+                        <img src="img/about_company2.jpg" alt="" class="imgb about-section__imgb">
+                    </div>
+                    <div class="about-section__flex-row">
+                        <div class="about-section__text-item">
+                            <h2 class="about-section__title default-title anim-elem">О студии</h2>
+                            <p class="about-section__paragraph paragraph anim-elem">В студии имеется
+                                высокотехнологичное
+                                современное
+                                оборудование HUBER французской компании LPG.</p>
+                            <p class="about-section__paragraph paragraph anim-elem">Мы предлагаем многофункциональный
+                                подход к
+                                улучшению
+                                показателей здоровья и самочувствия, приумножению сил и максимально приближаем Вас к
+                                желаемому результату. </p>
+                            <p class="about-section__paragraph paragraph anim-elem">Грамотный подход наших специалистов
+                                помогает
+                                плавно
+                                вернуть работоспособность, улучшить самочувствие без вреда и риска для организма.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="huber-section">
+                <div class="container">
+                    <h2 class="huber-section__title default-title anim-elem">HUBER</h2>
+                    <h3 class="huber-section__subtitle paragraph anim-elem">HUBER - новая ступень в технологиях
+                        восстановительной медицины, аппарат для моделирования фигуры, исключительное средство для
+                        гармоничного развития силы и координации движений.</h3>
+                    <div class="huber-section__row">
+                        <!-- Карточка с информацией -->
+                        <div class="huber-section__card anim-elem">
+                            <div class="huber-section__card-glue">
+                                <!-- Лицевая часть -->
+                                <div class="huber-section__card-front">
+                                    <h2 class="huber-section__card-title">Что такое HUBER?</h2>
+                                    <div class="huber-section__image">
+                                        <img src="icons/trainers3.png" alt="">
+                                    </div>
+                                    <div class="huber-section__text">
+                                        <p class="huber-section__paragraph paragraph_small">
+                                            Итеративная платформа HUBER это многофункциональный тренажёр нового
+                                            поколения
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Задняя часть -->
+                                <div class="huber-section__card-back">
+                                    <p class="huber-section__paragraph paragraph_small">
+                                        С его помощью
+                                        можно проработать до 80 мышечных групп, а также разгрузить центральную
+                                        нервную
+                                        систему.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="huber-section__card anim-elem">
+                            <div class="huber-section__card-glue">
+                                <div class="huber-section__card-front">
+                                    <h2 class="huber-section__card-title">Для чего это полезно?</h2>
+                                    <div class="huber-section__image">
+                                        <img src="icons/joints3.png" alt="">
+                                    </div>
+                                    <div class="huber-section__text">
+                                        <p class="huber-section__paragraph paragraph_small">
+                                            Занятия разрешены и полезны при различных заболиваниях (болях в спине,
+                                            артрозе,
+                                            варикозе)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="huber-section__card-back">
+                                    <p class="huber-section__paragraph paragraph_small">
+                                        В таких случаях тренер индивидуально составляет перечень разрешенных
+                                        упражнений и дает
+                                        меньшую и
+                                        адекватную нагрузку.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="huber-section__card anim-elem">
+                            <div class="huber-section__card-glue">
+                                <div class="huber-section__card-front">
+                                    <h2 class="huber-section__card-title">Есть ли противопоказания?</h2>
+                                    <div class="huber-section__image">
+                                        <img src="icons/stop3.png" alt="">
+                                    </div>
+                                    <div class="huber-section__text">
+                                        <p class="huber-section__paragraph paragraph_small">
+                                            У HUBER нет серьёзных противопоказаний, кроме общепринятых
+                                            симптоматических
+                                            для
+                                            неблагоприятных периодов физической активности.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="huber-section__card-back">
+                                    <p class="huber-section__paragraph paragraph_small">
+                                        Простудные заболевания с повышением
+                                        температуры, общее недомогание, болевой синдром, временное повышение
+                                        артериального
+                                        давления или Гипертоническая болезнь 3 степени.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-section" id="services">
+                <div class="container services-section__container">
+                    <h2 class="services-section__title default-title anim-elem">Услуги</h2>
+                    <div class="services-section__slider-wrapper anim-elem">
+
+                        <div class="services-section__slider-line swiper">
+                            <div class="services-section__slider-row swiper-wrapper">
+                                <div class="services-section__slider-card swiper-slide">
+                                    <h3 class="services-section__slider-title">Персональная тренировка HUBER 30мин/60мин
+                                    </h3>
+                                    <p class="services-section__paragraph paragraph_small">Формат восстановительного
+                                        фитнеса
+                                        включение мышц в работу
+                                        правильные стереотипы движения для
+                                        повышения уровня здоровья и улучшения
+                                        самочувствия.</p>
+                                    <h3 class="services-section__slider-subtitle">Формат тренировок</h3>
+                                    <ul class="services-section__format paragraph_small">
+                                        <li>&mdash; фитнес;</li>
+                                        <li>&mdash; похудение;</li>
+                                        <li>&mdash; укрепление мышц;</li>
+                                        <li>&mdash; укрепление мышечного рельефа.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="services-section__slider-card swiper-slide">
+                                    <h3 class="services-section__slider-title">Сплит тренировка (2 человека)
+                                        30 мин/60 мин</h3>
+                                    <p class="services-section__paragraph paragraph_small">За курс занятий на тренажере
+                                        HUBER можно устранить несколько проблем с организмом:</p>
+                                    <ul class="services-section__format paragraph_small">
+                                        <li>&mdash; устранение и профилактика болей в спине и шее, в тазобедренных
+                                            суставах;</li>
+                                        <li>&mdash; устранение и профилактика причин головных болей, бессонницы,
+                                            головокружения;</li>
+                                        <li>&mdash; устранение и профилактика нарушений работы органов малого таза;</li>
+                                        <li>&mdash; устранение и профилактика причин нарушения работы органов брюшной
+                                            полости;</li>
+                                        <li>&mdash; устранение и профилактика боли в стопах;</li>
+                                        <li>&mdash; устранение и профилактика гипертонии;</li>
+                                        <li>&mdash; коррекция осанки.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="services-section__slider-card swiper-slide">
+                                    <h3 class="services-section__slider-title">Группы «Оздоровительный фитнес» (взрослые
+                                        до 5 человек)
+                                    </h3>
+                                    <h3 class="services-section__slider-subtitle">Формат тренировок</h3>
+                                    <ul class="services-section__format paragraph_small">
+                                        <li>&mdash; тренировка выносливости организма сбалансированность работы
+                                            скелетной мускулатуры и сердечно - сосудистой системы;</li>
+                                        <li>&mdash; поддержание хорошего общего физического состояния;</li>
+                                        <li>&mdash; моделирование фигуры;</li>
+                                        <li>&mdash; снижение веса;</li>
+                                        <li>&mdash; устранение и профилактика болей в спине и шее, в тазобедренных
+                                            суставах.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="services-section__slider-card swiper-slide">
+                                    <h3 class="services-section__slider-title">
+                                        Группы «Оздоровительный фитнес» (детские от 8 лет до 5 человек)
+                                    </h3>
+                                    <h3 class="services-section__slider-subtitle">Формат тренировок</h3>
+                                    <ul class="services-section__format paragraph_small">
+                                        <li>&mdash; формирование правильного стереотипа осанки;</li>
+                                        <li>&mdash; развитие чувства баланса, равновесия и владения собственным телом;</li>
+                                        <li>&mdash; правильное формирование сышечного корсета;</li>
+                                        <li>&mdash; улучшение концентрации внимания;</li>
+                                    </ul>
+                                </div>
+
+                                <div class="services-section__slider-card swiper-slide">
+                                    <h3 class="services-section__slider-title">
+                                        Группы «Здоровая спина» (взрослые до 5 человек)
+                                    </h3>
+                                    <h3 class="services-section__slider-subtitle">Формат тренировок</h3>
+                                    <ul class="services-section__format paragraph_small">
+                                        <li>&mdash; формирование правильного стереотипа осанки;</li>
+                                        <li>&mdash; развитие чувства баланса, равновесия и владения собственным телом;</li>
+                                        <li>&mdash; правильное формирование сышечного корсета;</li>
+                                        <li>&mdash; улучшение концентрации внимания;</li>
+                                    </ul>
+                                </div>
+
+                                <div class="services-section__slider-card swiper-slide">
+                                    <h3 class="services-section__slider-title">
+                                        Группы «Эффективная растяжка» (взрослые до 5-6 человек)
+                                    </h3>
+                                    <h3 class="services-section__slider-subtitle">Формат тренировок</h3>
+                                    <ul class="services-section__format paragraph_small">
+                                        <li>&mdash; универсальная растяжка для всего тела;</li>
+                                        <li>&mdash; поддержание тонуса мышц;</li>
+                                        <li>&mdash; увеличение гибкости суставов;</li>
+                                        <li>&mdash; расслабляет и устраняет боль в мышцах;</li>
+                                        <li>&mdash; помогает достич стройности, подтянутости и упругости тела;</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="services-section__slider-card swiper-slide">
+                                    <h3 class="services-section__slider-title">
+                                        Группы «Ритм дыхания»
+                                    </h3>
+                                    <h3 class="services-section__slider-subtitle">Формат тренировок</h3>
+                                    <ul class="services-section__format paragraph_small">
+                                        <li>&mdash; укрепление организма;</li>
+                                        <li>&mdash; увеличение объема легких;</li>
+                                        <li>&mdash; поддержание организма в тонусе;</li>
+                                        <li>&mdash; улучшение самочувствия;</li>
+                                        <li>&mdash; упрочнение костей и связок;</li>
+                                        <li>&mdash; улучшение концентрации внимания;</li>
+                                        <li>&mdash; нормализация сна;</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="services-section__image anim-elem">
+                        <img src="img/slider.jpg" alt="" class="imgb">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="price-list-section" id="prices">
+                <div class="container">
+                    <h2 class="price-list-section__title default-title">Цены</h2>
+                    <table class="price-list-section__price-box">
+                        <tr class="anim-elem">
+                            <td>Персональная тренировка 30 минут</td>
+                            <td>650₽</td>
+                        </tr>
+                        <tr class="anim-elem">
+                            <td>Первая (ознакомительная) тренировка</td>
+                            <td>900₽</td>
+                        </tr>
+                        <tr class="anim-elem">
+                            <td>Сплит тренировка (цена для одного человека)</td>
+                            <td>950₽ &#8212; 1100₽</td>
+                        </tr>
+                        <tr class="anim-elem">
+                            <td>Персональная тренировка 60 минут</td>
+                            <td>1400₽ &#8212; 1500₽</td>
+                        </tr>
+                        <tr class="anim-elem">
+                            <td>Абонемент на 8 занятий в группе для детей от 8 лет</td>
+                            <td>4000₽</td>
+                        </tr>
+                        <tr class="anim-elem">
+                            <td>Абонемент на 8 занятий в группе</td>
+                            <td>4800₽</td>
+                        </tr>
+                        <tr class="anim-elem">
+                            <td>Абонемент на 10 персональных занятий</td>
+                            <td>13000₽ &#8212; 13500₽</td>
+                        </tr>
+                        <tr class="anim-elem">
+                            <td>Групповые занятия</td>
+                            <td>4800₽ (600₽ 1 занятие)</td>
+                        </tr>
+                    </table>
+                    <div class="price-list-section__discount">Гибкая система скидок для постоянных клиентов!</div>
+                </div>
+                <!-- <img src="img/backgrounds/rub-icon-big.png" alt=""
+                    class="price-list-section__background-big price-list-section__bg">
+                <img src="img/backgrounds/rub-icon-medium.png" alt=""
+                    class="price-list-section__background-medium price-list-section__bg">
+                <img src="img/backgrounds/rub-icon-small.png" alt=""
+                    class="price-list-section__background-small price-list-section__bg"> -->
+            </section>
+
+            <section class="coaches-section" id="coaches">
+                <div class="container">
+                    <h2 class="coaches-section__title default-title">Познакомьтесь
+                        с нашими тренерами</h2>
+                    <div class="coaches-section__row">
+                        <!-- Список -->
+                        <ul class="coaches-section__list">
+                            <li data-href="#Misha" class="coaches-section__list-item coaches-section__list-item_active">
+                                <img src="img/trainers/small-img-id1.jpg" alt="" class="coaches-section__small-image">
+                                <span class="coaches-section__name">Сиятсков Михаил</span>
+                            </li>
+                            <li data-href="#Alina" class="coaches-section__list-item">
+                                <img src="img/trainers/small-img-id2.jpg" alt="" class="coaches-section__small-image">
+                                <span class="coaches-section__name">Савченко Алина</span>
+                            </li>
+                            <!-- <li data-href="#Olga" class="coaches-section__list-item">
+                                <img src="img/trainers/small-img-id1.jpg" alt="" class="coaches-section__small-image">
+                                <span class="coaches-section__name">Ноздрюхина Ольга</span>
+                            </li> -->
+                            <li data-href="#Kate" class="coaches-section__list-item">
+                                <img src="img/trainers/small-img-id4.jpg" alt="" class="coaches-section__small-image">
+                                <span class="coaches-section__name">Солопова Екатерина</span>
+                            </li>
+                        </ul>
+
+                        <!-- Описание -->
+                        <div class="coaches-section__swiper-wrapper">
+                            <!-- Михаил -->
+                            <div id="Misha" class="coaches-section__body coaches-section__body_active anim-elem">
+                                <div class="coaches-section__big-image">
+                                    <img src="img/trainers/big-img-id1.jpg" alt="" class="imgb">
+                                </div>
+                                <div class="coaches-section__text">
+                                    <div class="coaches-section__label">Сиятсков Михаил</div>
+                                    <p class="coaches-section__info paragraph_small">Персональный тренер по фитнесу.
+                                        Сертифицированный специалист по работе на аппарате HUBER.</p>
+                                    <p class="coaches-section__info paragraph_small">Стаж работы более 7 лет. <br>
+                                        Провёл
+                                        более 10 000 персональных тренировок.</p>
+                                    <p class="coaches-section__promo paragraph_small">Девиз: «Ваш результат- моя
+                                        репутация.»</p>
+                                    <ul class="coaches-section__services paragraph_small">
+                                        <li>&mdash; набор мышечной массы;</li>
+                                        <li>&mdash; составление персонального тренировочного плана;</li>
+                                        <li>&mdash; снижение веса за счет жирового компонента;</li>
+                                        <li>&mdash; коррекция фигуры и осанки;</li>
+                                        <li>&mdash; ОФП (общая физическая подготовка);</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Савченко Алина -->
+                            <div id="Alina" class="coaches-section__body anim-elem">
+                                <div class="coaches-section__big-image">
+                                    <img src="img/trainers/big-img-id2.jpg" alt="" class="imgb">
+                                </div>
+                                <div class="coaches-section__text">
+                                    <div class="coaches-section__label">Савченко Алина</div>
+                                    <p class="coaches-section__promo paragraph_small">Специалист персональных тренировок
+                                        в тренажерном зале и функционального тренинга. Восстановительный и
+                                        оздоровительный фитнес. Сертифицированный специалист по работе на аппарате
+                                        HUBER.</p>
+                                    <p class="coaches-section__info paragraph_small">Стаж работы более 6 лет.</p>
+                                    <p class="coaches-section__info paragraph_small">Девиз «Секрет успеха — это
+                                        преданность своей цели.»</p>
+                                    <ul class="coaches-section__services paragraph_small">
+                                        <li>&mdash; снижение веса;</li>
+                                        <li>&mdash; улучшение мышечного тонуса;</li>
+                                        <li>&mdash; коррекция фигуры;</li>
+                                        <li>&mdash; увеличение выносливости и работоспособности;</li>
+                                        <li>&mdash; составление программ питания;</li>
+                                        <li>&mdash; коррекция осанки;</li>
+                                        <li>&mdash; восстановление гибкости и мобильности тела.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Ноздрюхина Ольга -->
+                            <!-- <div id="Olga" class="coaches-section__body">
+                            <div class="coaches-section__big-image">
+                                <img src="img/trainers/big-img-id1.jpg" alt="" class="imgb">
+                            </div>
+                            <div class="coaches-section__text">
+                                <div class="coaches-section__label">Ноздрюхина Ольга</div>
+                                <p class="coaches-section__info paragraph_small">Стаж работы более 7 лет. <br> Провёл
+                                    более 10 000 персональных тренировок.</p>
+                                <p class="coaches-section__promo paragraph_small">Специалист по восстановительному
+                                    фитнесу,
+                                    разработчик персональных программ,
+                                    сертифицированный специалист по работе на аппарате HUBER, работа с людьми разных
+                                    возрастов и разного уровня подготовки.
+                                </p>
+                                <ul class="coaches-section__services paragraph_small">
+                                    <li>&mdash; функциональный и силовой тренинг;</li>
+                                    <li>&mdash; снижение веса тела за счет жирового компонента;</li>
+                                    <li>&mdash; увеличение выносливости;</li>
+                                    <li>&mdash; набор мышечной массы;</li>
+                                    <li>&mdash; увеличение силовых показателей;</li>
+                                    <li>&mdash; составление персонального тренировочного плана;</li>
+                                    <li>&mdash; развитие сердечно-сосудистой системы;</li>
+                                    <li>&mdash; работа с собственным весом.</li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                            <!-- Солопова Екатерина -->
+                            <div id="Kate" class="coaches-section__body anim-elem">
+                                <div class="coaches-section__big-image">
+                                    <img src="img/trainers/big-img-id3.jpg" alt="" class="imgb">
+                                </div>
+                                <div class="coaches-section__text">
+                                    <div class="coaches-section__label">Солопова Екатерина</div>
+                                    <p class="coaches-section__promo paragraph_small">Специалист по реабилитационному
+                                        фитнесу, разработчик персональных программ. Сертифицированный специалист по
+                                        работе на аппарате HUBER.</p>
+                                    <p class="coaches-section__info paragraph_small">Стаж работы более 17 лет.</p>
+                                    <p class="coaches-section__info paragraph_small">Девиз: «Главное - не
+                                        останавливайся! Начало всегда самое тяжелое»</p>
+                                    <ul class="coaches-section__services paragraph_small">
+                                        <li>&mdash; реабилитация и восстановление после травм;</li>
+                                        <li>&mdash; коррекция осанки;</li>
+                                        <li>&mdash; устранение болей в спине;</li>
+                                        <li>&mdash; грыжи;</li>
+                                        <li>&mdash; хондрозы;</li>
+                                        <li>&mdash; сколиоз;</li>
+                                        <li>&mdash; дегенеративные изменения;</li>
+                                        <li>&mdash; восстановление паттерна дыхания;</li>
+                                        <li>&mdash; восстановление гибкости и мобильности тела.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts-section" id="contacts">
+                <div class="container">
+                    <h2 class="contacts-section__title default-title">Контакты</h2>
+                    <div class="contacts-section__row">
+                        <form name="emailForm" action=""  class="contacts-section__form js-form">
+                            <h3 class="contacts-section__form-title">Оставте свои контактные данные и мы свяжемся с Вами:</h3>
+                            <input type="text" name="name" maxlength="35"  placeholder="Как Вас зовут?" class="contacts-section__form-item js-input">
+                            <input type="text" name="email" placeholder="Email" class="contacts-section__form-item js-input js-input-email">
+                            <input type="tel" name="tel" placeholder="Номер телефона" class="contacts-section__form-item js-input js-input-tel" data-not-required>
+                            <labeыl for="time" min="08:00">Когда вам перезвонить?</labeыl>
+                            <input type="time" name="time" class="contacts-section__form-item js-input" data-not-required>
+                            <div>
+                                <input type="checkbox" name="checkbox" id="rights" required>
+                                <label for="rights">Согласие на обработку персональных данных.</label>
+                            </div>
+                            <input type="submit" value="Свяжитесь со мной" class="contacts-section__form-item contacts-section__btn">
+                        </form>
+                        <div class="contacts-section__grid-container">
+                            <div class="grid-items address">
+                                <h5 class="contacts-section__subtitle">Адрес:</h5>
+                                <p class="contacts-section__info">Пугачевская 7 Г (4 -х этажное здание), помещение № 9,
+                                    вход со стороны Волги</p>
+
+                            </div>
+                            <div class="grid-items phone-numbers">
+                                <h5 class="contacts-section__subtitle">Телефоны:</h5>
+                                <p class="contacts-section__info">
+                                    <a href="tel: +7 8442 97 97 00">+7 (8442) 97 97 00</a> <br>
+                                    <a href="tel: +7 937 747 97 00">+7 937 747 97 00</a>
+                                </p>
+                            </div>
+                            <div class="grid-items working-hours">
+                                <h5 class="contacts-section__subtitle">Время работы:</h5>
+                                <p class="contacts-section__info">ПН-ВС с 9:00 до 20:00</p>
+                            </div>
+                            <div class="grid-items email">
+                                <h5 class="contacts-section__subtitle">Email:</h5>
+                                <p class="contacts-section__info">
+                                    <a href="mailto: kamvlg2019@yandex.ru">kamvlg2019@yandex.ru</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-section__map" id="map"></div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row-one">
+                    <h4 class="footer__main-title">КАМ</h4>
+                    <nav class="menu footer__menu">
+                        <ul class="footer__navbar menu__list ">
+                            <li><a href="#main" class="menu__link footer__link">Главная</a></li>
+                            <li><a href="#about" class="menu__link footer__link">О студии</a></li>
+                            <li><a href="#services" class="menu__link footer__link">Услуги</a></li>
+                            <li><a href="#prices" class="menu__link footer__link">Цены</a></li>
+                            <li><a href="#coaches" class="menu__link footer__link">Тренеры</a></li>
+                            <li><a href="#contacts" class="menu__link footer__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <p class="footer__info">
+                        <a href="tel: +7 8442 97 97 00" class="footer__phone">+7 (8442) 97 97 00</a> <br>
+                        <a href="tel: +7 937 747 97 00" class="footer__phone">+7 937 747 97 00</a>
+                    </p>
+                </div>
+                <div class="footer__row-two">
+                    <div class="footer__row-two_item-one">
+                        <p class="footer__copyrights">© 2021-2022 КАМ. Все права защищены.</p>
+                        <p class="footer__copyrights">ООО «КАМ» ИНН/КПП 3460076406/34600100</p>
+                    </div>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/kamfitness.vlg/" target="_blink" class="footer__social-link"><img src="icons/instagramm-icon.svg" alt="instagramm"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/formValidation.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/scrollObserver.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/sliderSwiper.js"></script>
+    <script src="js/mobileMenu.js"></script>
+</body>
+
+</html>
